@@ -20,18 +20,18 @@ motor = DCmotor(J,R,K)
 
 Speed = [0] 		#initialize a vector to keep track of angular velocity
 Voltage = [0]		#initalize a vector to keep track of Voltage
-Error = [0]			#initalize a vector to keep track of the error term with the first value being 0
+Error = [0]		#initalize a vector to keep track of the error term with the first value being 0
 SetPoint = [0]		#initalize a vector to keep track of the setpoint term with the first value being 0
 
 
 #paramaters
-Kp = 1				#proportional control
-Ki = 0				#integral control
+Kp = 1			#proportional control
+Ki = 0			#integral control
 Kd = 10          	#derivative control
-Sp = 1				#anguar velocity setpoint
+Sp = 1			#anguar velocity setpoint
 step_size = .01 	#seconds
 
-
+#simulate the episode
 for t in range(2000):
 	
 	#get control move
