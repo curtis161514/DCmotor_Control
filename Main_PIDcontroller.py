@@ -46,8 +46,12 @@ for t in range(2000):
 	Error = np.append(Error,Er)
 	SetPoint = np.append(SetPoint,Sp)
 
-plt.plot(Speed)
-plt.plot(SetPoint)
+#plot results
+plt.plot(Speed, label = 'Angular Velocity')
+plt.plot(SetPoint, label = 'Setpoint')
+plt.plot(Voltage, label = 'Voltage')
+plt.legend(loc='upper center', shadow=True, fontsize='x-large')
+plt.xlabel('time (.01s)')
 plt.show()
 
 #save data to csv.
