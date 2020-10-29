@@ -179,8 +179,3 @@ plt.xlabel('time (.01s)')
 plt.show()
 
 
-#save data to csv.
-dataset = pd.DataFrame({'Speed': Speed, 'SetPoint': SetPoint, 'Voltage_PID':Voltage,/
-'Voltage_DNN':Voltage_NN,'Voltage_RNN':Voltage_RNN,'Voltage_DQN':Voltage_DQN})
-dataset.to_csv('0-.5-motordata.txt',sep='\t')
-
